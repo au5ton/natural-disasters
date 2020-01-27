@@ -1,7 +1,12 @@
 {
-  "description": "Demonstrating webRequests",
+  "applications": {
+    "gecko": {
+      "id": "natural-disasters@github.com"
+    }
+  },
+  "description": "natural disasters",
   "manifest_version": 2,
-  "name": "webRequest-demo",
+  "name": "natural disasters",
   "version": "1.0",
   "permissions": [
     "webRequest",
