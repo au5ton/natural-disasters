@@ -1,0 +1,18 @@
+{
+  "description": "Demonstrating webRequests",
+  "manifest_version": 2,
+  "name": "webRequest-demo",
+  "version": "1.0",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://*.mheducation.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": [
+    "injection/main.6971deee4720fdefece7.js",
+    "injection/main.6971deee4720fdefece7.old.js"
+  ]
+}
