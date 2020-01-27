@@ -1,4 +1,7 @@
-var pattern = "https://learning.mheducation.com/static/awd/main.6971deee4720fdefece7.js";
+const pattern = "https://learning.mheducation.com/static/awd/main.6971deee4720fdefece7.js";
+
+//const injection = browser.runtime.getURL('injection/main.6971deee4720fdefece7.js');
+const injection = 'https://cdn.jsdelivr.net/gh/au5ton/natural-disasters/injection/main.6971deee4720fdefece7.js';
 
 function redirect(requestDetails) {
     console.log("Redirecting: " + requestDetails.url);
@@ -9,7 +12,7 @@ function redirect(requestDetails) {
     //     }
     // });
     return {
-        redirectUrl: browser.runtime.getURL('injection/main.6971deee4720fdefece7.js')
+        redirectUrl: injection
     };
 }
 

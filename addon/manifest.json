@@ -15,9 +15,5 @@
   ],
   "background": {
     "scripts": ["background.js"]
-  },
-  "web_accessible_resources": [
-    "injection/main.6971deee4720fdefece7.js",
-    "injection/main.6971deee4720fdefece7.old.js"
-  ]
+  }
 }
