@@ -1,2 +1,4 @@
 *.xpi
 .firebaserc
+*.json
+*.quizlet
