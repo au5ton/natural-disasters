@@ -1,3 +1,0 @@
-# functions
-
-for receiving requests
