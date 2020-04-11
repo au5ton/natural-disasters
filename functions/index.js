@@ -8,6 +8,7 @@ const app = express();
 
 // Automatically allow cross-origin requests
 app.use(cors());
+app.use(express.json()) // for parsing application/json
 
 app.get('/test', (req, res) => {
     res.send('Hello, World!')
