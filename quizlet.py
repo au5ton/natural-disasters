@@ -102,10 +102,11 @@ def makeEntry(item):
     return f''
 
 
-with open('nd.deobfuscated.json', 'r') as infile:
-    with open('nd.quizlet', 'w', encoding='utf-8') as outfile:
+with open('kin.deobfuscated.json', 'r') as infile:
+    with open('kin_MC_MULT.quizlet', 'w', encoding='utf-8') as outfile:
         data = json.loads(infile.read())
         for d in data:
             for e in d["$assessmentItems"]:
-                outfile.write(f'{makeEntry(e)}\n')
+                if e["type"] in ["MULTIPLE_CHOICE_MULTI_SELECT", "TRUE_FALSE"]:
+                  outfile.write(f'{makeEntry(e)}\n')
         
